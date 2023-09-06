@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Glatic'</title>
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/11fe60c87a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imgs/icons/3kh0.png" sizes="128x128" />
+    <meta property="og:title" content="Railin"/>
+    <meta property="og:description" content="Best game site on the block 😎"/>
+    <meta property="og:image" content="imgs/banner.png"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="../js/main.js"></script>
+    <meta name="theme-color" content="#eb6123">
+
+    <script>
+        fetch("https://raw.githubusercontent.com/3kh0/website-v4/main/assets/json/games.json")
+        .then((lessgooo) => lessgooo.json())
+        .then((games) => {
+        games.forEach((game) => {
+            const gamecontainmentchamber = document.createElement('div');
+            const gamerdiv = document.querySelector('.frame-main');
+            const gamesbutton = document.querySelector('.classes');
+            const gamerNavigaton = gamerdiv.querySelector('.frame-bar');
+            const gamerframer = document.getElementById('homework');
+            gamecontainmentchamber.className = 'class';
+            gamecontainmentchamber.innerHTML = `<img src="${"https://raw.githack.com/3kh0/3kh0-assets/main/" + game.root + "/" + game.img}"/>`;
+            gamecontainmentchamber.innerHTML += `<h1>${game.name}</h1>`;
+            gamesbutton.appendChild(gamecontainmentchamber);
+
+            gamecontainmentchamber.onclick = (e) => {
+                gamesbutton.classList.add('hidden');
+                gamerdiv.classList.remove('hidden');
+                gamerframer.src = `https://raw.githack.com/3kh0/3kh0-assets/main/${game.root}/${game.file}`;
+            };
+            gamerNavigaton.querySelector('#close').addEventListener('click', (e) => {
+                gamesbutton.classList.remove('hidden');
+                gamerdiv.classList.add('hidden');
+                gamerframer.src = '';
+            });
+            gamerNavigaton.querySelector('#fullscreen').addEventListener('click', (e) => {
+                if (!document.fullscreenElement) {
+                gamerframer.requestFullscreen();
+            }
+        });
+        });
+        })
+        .catch((e) => {
+            alert('Error Classes Not Loaded');
+            alert(e);
+        });
+    </script>
+
+</head>
+<body onload="pageLoad()">
+
+    <div class="frame-main hidden" style="margin-top: -15px;">
+        <div class="frame-bar" id="buggati">
+            <i id="close" class="fa-solid fa-arrow-left"></i>
+            <i id="fullscreen" class="fa-solid fa-maximize"></i>
+        </div>
+        <iframe id="homework"src=""></iframe>
+    </div>
+
+    <h1 class="ti"><a style="text-decoration: underline;" href="https://github.com/3kh0">3kh0</a>'s Gxmes</h1>
+    <h2 class="ti"><a href="https://glatic.games" style="text-decoration: underline;">Home Page</a></h2>
+    <br>
+    <hr>
+    <br>
+    <div class="classes">
+        
+    </div>
+    <h1 class="😈">Mobile Sucks</h1>
+</body>
+</html>

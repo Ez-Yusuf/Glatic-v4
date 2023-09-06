@@ -1,0 +1,112 @@
+.classes {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.😈 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  visibility: hidden;
+}
+.classes div{
+  height: fit-content;
+  margin-top: 20px;
+  z-index: 1;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 15px solid rgba(0, 0, 0, 0);
+  background-color: var(--color2);
+  box-shadow: 0 0 5px 2.5px var(--color2);
+  transition: 0.75s;
+  animation: downcenta 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  width: 158px;
+  height: 180px;
+}
+.classes img {
+  width: 128px;
+  height: 128px;
+  border-radius: 15px;
+}
+.classes h1{
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 1vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.classes div:hover {
+  transition: 0.75s;
+  animation: upcenta 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  background-color: var(--color3);
+  cursor: pointer;
+}
+.frame-main {
+  margin-top: -60px;
+  display: block;
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  height: 99.6%;
+  background: var(--color3);
+}
+.frame-bar {
+  display: flex;
+  position: absolute;
+  width: fit-content;
+  padding: 1em 0.5em;
+  margin-left: 15px;
+  background: var(--color4);
+  min-height: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 2px var(--color4);
+  transition: 0s;
+  flex-direction: column;
+  align-items: center;
+  gap: 7.5px;
+}
+.frame-bar i {
+  float: left;
+  line-height: 15px;
+  padding: 0.25em;
+  margin-right: 2px;
+  color: var(--color1);
+  font-size: 25px;
+  float: left;
+  transition: 0.75s;
+}
+.frame-bar i:hover {
+  color: var(--color5);
+  transition: 0.75s;
+}
+iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 450px) {
+  .classes div {
+    display: none;
+  }
+  .😈 {
+    visibility: visible;
+  }
+}
+#panicbuttontext {
+  margin-top: 15px;
+  text-align: center;
+  line-height: 50px;
+}
+body{
+  overflow-x: hidden;
+}
+.hidden {
+  display: none;
+}
