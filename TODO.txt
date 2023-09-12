@@ -1,3 +1,4 @@
+make proxy on nav
 add more proxys
 add about:blank function
 more games/apps
