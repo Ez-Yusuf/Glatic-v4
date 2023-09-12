@@ -1,0 +1,96 @@
+
+<!--real code starts here-->
+
+    <style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+        center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+        }
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #4CAF50;} /* Green */
+.button3 {background-color: #4CAF50;} /* Green */
+.button4 {background-color: #4CAF50;} /* Green */
+.button5 {background-color: #4CAF50;} /* Green */
+</style>
+</head>
+<body>
+
+    <div class="center">
+      <strong><b><h1><p style="color:red;">Proxys do not save data so when you close the site you will lose everything on the proxy!</p></h1></b></strong>
+    </div>
+
+<style>
+.center {
+  position:relative;
+    margin:0 auto;
+    clear:left;
+    height:auto;
+    z-index: 0;
+    text-align:center;
+    color:ff0000;
+    }
+</style>
+    
+<center>
+    <button id="button1" class="button button1">Server_1</button>
+    <button id="button2" class="button button2">Server_2</button>
+    <button id="button3" class="button button3">Server_3</button>
+    <button id="button4" class="button button4">Server_4</button>
+    <button id="button5" class="button button5">Server_5</button>
+</center>
+
+    <!-- proxys -->
+
+<!-- first server -->
+    <script type="text/javascript">
+    document.getElementById("button1").onclick = function () {
+        location.href = "servers/S1.html";
+    };
+</script>
+
+<!-- second server -->
+    <script type="text/javascript">
+    document.getElementById("button2").onclick = function () {
+        location.href = "servers/S2.html";
+    };
+</script>
+
+    <!-- third server -->
+    <script type="text/javascript">
+    document.getElementById("button3").onclick = function () {
+        location.href = "servers/S3.html";
+    };
+</script>
+
+    <!-- fourth server -->
+    <script type="text/javascript">
+    document.getElementById("button4").onclick = function () {
+        location.href = "servers/S4.html";
+    };
+</script>
+
+     <!-- fifth server -->
+    <script type="text/javascript">
+    document.getElementById("button4").onclick = function () {
+        location.href = "servers/S5.html";
+    };
+</script>
+    
+</body>
+</html>
