@@ -14,11 +14,4 @@ function makemebus(){
     document.getElementById('randomy').innerHTML = says[Math.floor(Math.random() * says.length)]
 }
 
-RewriteEngine on
 
-
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R]
-
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^ %{REQUEST_URI}.html [NC,L]
