@@ -14,7 +14,7 @@
       "proxy"
     ],
     "author": "",
-    "license": "GPL-3.0-or-later",
+    "license": "MIT",
     "dependencies": {
       "@tomphttp/bare-server-node": "^1.2.6",
       "express": "^4.18.2"
