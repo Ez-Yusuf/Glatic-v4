@@ -1,6 +1,7 @@
 import express from "express";
+import http from "node:http";
 import createBareServer from "@tomphttp/bare-server-node";
-import http from "node:path";
+import path from "node:path";
 import * as dotenv from "dotenv";
 dotenv.config();
 
