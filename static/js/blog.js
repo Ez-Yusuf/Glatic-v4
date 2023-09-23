@@ -1,4 +1,4 @@
-.then((lessgooo) => lessgooo.json())
+then((lessgooo) => lessgooo.json())
 .then((blog) => {
 blog.forEach((item) => {
         const makedivaaaa = document.createElement('div');
