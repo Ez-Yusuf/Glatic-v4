@@ -23,7 +23,31 @@ app.use(express.static(path.join(__dirname, "static")));
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "static", "index.html"));
   });
-  //add more pages if u want
+
+  app.get("/learning", (req, res) => {
+    res.sendFile(path.join(__dirname, "static", "learning.html"));
+  });
+
+  app.get("/projects", (req, res) => {
+    res.sendFile(path.join(__dirname, "static", "projects.html"));
+  });
+
+  app.get("/news", (req, res) => {
+    res.sendFile(path.join(__dirname, "static", "news.html"));
+  });
+
+  app.get("/algebra", (req, res) => {
+    res.sendFile(path.join(__dirname, "static", "proxy.html"));
+  });
+
+  app.get("/partners", (req, res) => {
+    res.sendFile(path.join(__dirname, "static", "partners.html"));
+  });
+
+  app.get("/settings", (req, res) => {
+    res.sendFile(path.join(__dirname, "static", "settings.html"));
+  });
+  
 
   server.on("request", (req, res) => {
     if (bareServer.shouldRoute(req)) {
