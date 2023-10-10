@@ -37,7 +37,7 @@ if (localStorage.getItem("cloak") == "drive") {
 if (localStorage.getItem("panic") == "on") {
   document.addEventListener('keydown', event => {
     if (event.keyCode == 192) {
-      window.open("https://www.google.com/", "_self");
+      window.open("https://www.google.com/search?q=math+caculaypr&rlz=1CANEHU_enUS1073&oq=math+caculaypr+&aqs=chrome..69i57j0i13i131i433i512j0i13i512l8.5546j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on", "_self");
     }
   })
   console.log('panic')
